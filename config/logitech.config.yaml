@@ -1,0 +1,26 @@
+teleop_twist_joy_node:
+  ros__parameters:
+    axis_linear:
+      x: 1
+    scale_linear:
+      #x: 0.5   # First Robot
+      #x: 0.25  # HB  Robot1
+      x:  0.5    # Robot 2
+    scale_linear_turbo:
+      #x: 0.4    # First HB Robot1
+      x:  0.8     # Robot2
+      #x: 1.0    # POC Robot
+
+    axis_angular:
+      yaw: 2    
+    scale_angular:
+      #yaw: 0.8      # HB Robot1
+      yaw:  1.0       # HB Robot2
+      #yaw: 1.0      # First Robot
+    scale_angular_turbo:
+      #yaw: 1.4      # HB Robot1
+      yaw:  2.0      # Robot2
+      #yaw: 2.0    First Robot
+
+    enable_button: 1  
+    enable_turbo_button: 0  
