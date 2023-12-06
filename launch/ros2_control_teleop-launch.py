@@ -34,10 +34,10 @@ def generate_launch_description():
             #remappings={('/cmd_vel', '/diff_cont/cmd_vel_unstamped')},
             remappings={('/cmd_vel', '/cmd_vel_joy')},
             ),
-        launch_ros.actions.Node(
-            package='teleop_twist_joy', executable='teleop_node',
-            name='teleop_twist_joy_node', parameters=[config_filepath],
-            ),    
+        #launch_ros.actions.Node(
+        #    package='teleop_twist_joy', executable='teleop_node',
+        #    name='teleop_twist_joy_node', parameters=[config_filepath],
+        #    ),    
         # For Gazebo sim 
         #launch_ros.actions.Node(
         #    package='teleop_twist_joy', executable='teleop_node',
